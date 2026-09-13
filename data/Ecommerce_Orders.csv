@@ -1,0 +1,206 @@
+order_id,customer_name,email,order_date,product,quantity,unit_price,total_price,status,country,payment_method,notes
+ORD-93810,"Brown, Sarah",david.90@HPLUSSPORT.com,1/28/23,External SSD,7,227.36,323.52,Pending,US,Debit Card,
+ORD-22156,EMILY moore,anna550@hplussport.COM,3/13/23,Mechanical Keyboard,2,433.9,732.84,SHIPPED,AUS,credit card,n/a
+ORD-93227,MIKE  davis,david225@red30tech.com,8/5/23,Mouse Pad,4,200.8,283.56,Cancelled,Australia,debit,gift wrap
+ORD-38746,anna JOHNSON,mike643@twotreesoliveoil.COM,25-06-2024,Wireless Headphones,0,$385 ,910.18,shipped,US,credit card,rush order
+,,,,,,,,,,,
+ORD-93748,EMILY williams,anna.20@hplussport.com,3/22/23,USB-C Cable,9,68.55,1057.71,cancelled,U.S.A,PayPal,rush order
+ORD-62296,anna  WILSON,sarah66@hplussport.com,3/2/23,Wireless Headphones,6,259.5,268.96,cancelled,U.S.A,debit,
+ORD-22363,Chris  Miller,john.690@red30tech.com,7/3/24,Phone Case,5,128.7,1712.65,completed,CA,credit card,
+ORD-31798,"Smith, Chris",chris.272@hplussport.com,3/1/23,Wireless Headphones,6,29.82,1921.75,completed,United States,PayPal,NULL
+ORD-25713,lisa moore,chris_674@kinetecoinc.com,18-11-2024,USB-C Cable,1,312.47,430.24,shipped,United Kingdom,PayPal,gift wrap
+ORD-47353,bob moore,david307@RED30TECH.COM,10/16/23,Mouse Pad,0,255.18,850.03,shipped,United Kingdom,paypal,
+ORD-67912,John JOHNSON,mike559@red30tech.com,10/2/23,Laptop Stand,-1,391.2,1500.21,Shipped,US,Credit Card,
+ORD-53540,"JONES, Sarah",jane_392@kinetecoinc.com,8/22/23,Laptop Stand,-1,$143 ,1021.26,Refunded,CA,Credit Card,
+ORD-44237,bob Smith,emily_747@red30tech.com,3/22/24,External SSD,-1,$218 ,1328.46,completed,UK,debit,gift wrap
+ORD-48752,CHRIS williams,john312@HPLUSSPORT.com,8/7/23,Phone Case,0,$260 ,1904.24,Shipped,U.S.A,CREDIT CARD,
+ORD-93748,"Miller, anna",chris507@red30tech.com,6/14/24,Laptop Stand,2,71,1192.93,PENDING,CA,Apple Pay,
+ORD-72216,bob  WILSON,bob_451@kinetecoinc.com,3/24/23,Webcam,3,36.79,129.22,Pending,Australia,Credit Card,n/a
+ORD-10772,"Miller, Chris",bob.447@red30tech.com,5/11/23,Webcam,10,46.5,524.01,SHIPPED,United Kingdom,debit,rush order
+ORD-65255,John WILSON,emily230@red30tech.com,9/2/23,USB-C Cable,10,$235 ,1216.46,completed,US,credit card,n/a
+ORD-93748,"Miller, Chris",sarah_105@red30tech.com,25-10-2024,UNKNOWN,7,57.2,873.8,Cancelled,UK,Apple Pay,N/A
+,,,,,,,,,,,
+ORD-87656,jane  JONES,anna.584@hplussport.com,30-12-2023,Smart Watch,5,$260.73 ,979.71,Shipped,AUS,Apple Pay,
+ORD-39045,lisa  garcia,emily_436@TWOtreesoliveoil.com,17-07-2023,External SSD,3,112.11,1051.65,shipped,U.S.A,Debit Card,
+ORD-80010,JOHN wilson,mike654@hplussport.com,7/8/23,Monitor,2,203.35,1623.23,shipped,U.S.A,debit,n/a
+ORD-91057,ANNA davis,chris313@red30tech.com,6/27/23,Wireless Headphones,7,346.24,1415.38,PENDING,U.S.A,PayPal,NULL
+ORD-39466,MIKE JOHNSON,bob610@twotreesoliveoil.com,5/27/24,USB-C Cable,10,445.26,187.2,Refunded,Australia,Credit Card,rush order
+ORD-32962,bob  williams,anna_993@hplussport.com,14-06-2023,Monitor,5,407.7,508.54,completed,England,Credit Card,
+ORD-17104,anna davis,david135@red30tech.COM,12/6/23,External SSD,7,116.23,239.34,COMPLETED,UK,paypal,NULL
+ORD-71894,"Brown, Chris",bob_792@hplussport.com,8/16/24,Monitor,9,175.84,1866.04,Shipped,U.S.A,PayPal,NULL
+ORD-67912,"Miller, Chris",john130@hplussport.com,2/24/24,Mechanical Keyboard,6,326.67,636.74,PENDING,USA,PayPal,rush order
+,,,,,,,,,,,
+ORD-21846,"davis, jane",john48@HPLUSSPORT.com,6/27/24,Phone Case,3,44.09,997.85,cancelled,Canada,Apple Pay,rush order
+ORD-70981,MIKE  JOHNSON,lisa307@hplussport.com,4/20/23,Mouse Pad,0,496.4,1134.03,Refunded,USA,Apple Pay,rush order
+ORD-40162,SARAH moore,mike644@red30tech.COM,5/15/23,Mouse Pad,7,$104 ,1827.41,COMPLETED,Canada,paypal,gift wrap
+,,,,,,,,,,,
+ORD-71385,SARAH miller,chris15@hplussport.COM,15-10-2024,Laptop Stand,8,$312 ,446.63,completed,Canada,paypal,NULL
+ORD-15943,anna JOHNSON,david139@twotreesoliveoil.com,5/16/24,Mechanical Keyboard,-1,$112.55 ,203.21,Refunded,AUS,debit,rush order
+ORD-26011,jane Brown,emily.250@kinetecoinc.com,6/1/23,UNKNOWN,3,272.41,56.43,Completed,U.S.A,Credit Card,
+ORD-26614,jane  davis,david608@red30tech.com,2/1/23,Webcam,7,247.68,647.61,COMPLETED,UK,Debit Card,NULL
+ORD-79541,Chris JOHNSON,david_739@twotreesoliveoil.com,2/13/24,Mouse Pad,-1,$334.23 ,951.16,completed,United States,Debit Card,
+ORD-86869,JANE miller,chris889@red30tech.COM,6/8/23,USB-C Cable,-1,$61.87 ,1691.08,cancelled,AUS,paypal,
+ORD-50499,MIKE  williams,john.94@twotreesoliveoil.com,11/29/23,Wireless Headphones,3,378.45,1325.57,PENDING,England,credit card,gift wrap
+ORD-47125,DAVID JONES,lisa_57@hplussport.com,5/3/23,Webcam,3,193.2,1337.76,SHIPPED,USA,Apple Pay,
+ORD-85465,Chris JONES,emily.176@hplussport.com,2/15/24,Mechanical Keyboard,6,169.87,1063.56,Shipped,United Kingdom,CREDIT CARD,
+ORD-43550,jane  williams,lisa779@twotreesoliveoil.com,8/10/24,Smart Watch,-1,256.1,,SHIPPED,United States,credit card,n/a
+ORD-60394,"davis, John",anna514@kinetecoinc.com,6/26/23,Monitor,8,185.1,680.04,cancelled,AUS,credit card,gift wrap
+ORD-98916,LISA williams,mike_939@TWOtreesoliveoil.com,20-10-2024,External SSD,2,$257 ,432.31,PENDING,US,paypal,
+ORD-80748,"garcia, John",mike_167@TWOtreesoliveoil.com,9/1/23,Monitor,4,158.2,392.06,Refunded,Canada,paypal,NULL
+ORD-64874,LISA williams,anna.896@red30tech.com,6/9/24,USB-C Cable,4,442.9,1006.5,Shipped,United States,Credit Card,gift wrap
+ORD-95191,John  JONES,mike_778@red30tech.com,6/3/23,Smart Watch,9,$60 ,480.69,Refunded,Canada,Apple Pay,n/a
+ORD-92831,MIKE  JONES,N/A,8/7/24,USB-C Cable,-1,38.5,1017.71,Completed,Canada,debit,gift wrap
+ORD-12128,SARAH johnson,emily.560@kinetecoinc.com,4/13/24,Wireless Headphones,4,161.2,1088.35,shipped,N/A,paypal,gift wrap
+ORD-16265,jane  garcia,anna_917@kinetecoinc.com,15-06-2024,Webcam,2,303.21,209.68,SHIPPED,UK,debit,
+ORD-56077,EMILY  moore,john77@kinetecoinc.COM,3/24/24,Laptop Stand,-1,194.51,902.6,SHIPPED,United States,Debit Card,NULL
+ORD-46528,MIKE  davis,jane.269@twotreesoliveoil.com,3/17/23,Monitor,-1,335.58,1783.21,COMPLETED,AUS,Debit Card,
+ORD-36342,ANNA smith,emily479@hplussport.com,2/24/24,Mouse Pad,2,$235.59 ,1561.62,Refunded,US,Credit Card,
+ORD-49862,SARAH garcia,bob202@kinetecoinc.COM,6/7/23,Smart Watch,6,413.49,1543.19,shipped,Australia,Credit Card,N/A
+ORD-81509,anna  Brown,jane706@twotreesoliveoil.com,9/13/24,Mouse Pad,6,69.73,487.27,completed,U.S.A,Credit Card,rush order
+ORD-90658,MIKE garcia,mike511@twotreesoliveoil.com,6/1/24,Laptop Stand,-1,29.09,1310.25,PENDING,USA,debit,
+ORD-57943,"Smith, Chris",bob76@twotreesoliveoil.com,12/14/23,Phone Case,4,$252.54 ,1608.91,Cancelled,Australia,CREDIT CARD,gift wrap
+ORD-51750,BOB moore,david_546@twotreesoliveoil.com,3/2/24,Wireless Headphones,10,136.44,1444.19,cancelled,CA,debit,
+ORD-41745,jane Brown,chris.156@kinetecoinc.com,28-07-2024,Monitor,9,160.31,711.8,Refunded,UK,PayPal,
+ORD-49124,"JONES, bob",anna325@red30tech.COM,1/24/24,Phone Case,5,$147 ,1313.66,PENDING,CA,paypal,
+ORD-86917,"Brown, DAVID",chris339@red30tech.com,5/2/24,Mechanical Keyboard,0,324.72,468.28,Completed,US,CREDIT CARD,
+ORD-62034,bob Smith,lisa110@kinetecoinc.COM,7/17/23,Monitor,5,$12 ,1515.78,COMPLETED,AUS,debit,
+ORD-62538,MIKE davis,john_268@TWOtreesoliveoil.com,8/9/24,Mouse Pad,4,$335.55 ,1007.53,shipped,AUS,paypal,gift wrap
+ORD-38721,ANNA moore,david935@twotreesoliveoil.COM,3/21/23,External SSD,9,$288 ,886.47,Refunded,Australia,Apple Pay,
+ORD-77272,DAVID davis,chris_261@red30tech.com,7/8/24,USB-C Cable,8,$147.11 ,1956.77,Refunded,United Kingdom,debit,N/A
+ORD-59479,DAVID williams,david403@red30tech.com,7/11/24,Laptop Stand,4,176.35,,Refunded,USA,credit card,
+ORD-68515,John Brown,sarah553@kinetecoinc.COM,4/9/24,Phone Case,9,209.71,1760.03,COMPLETED,England,Credit Card,gift wrap
+ORD-97994,"Miller, Chris",mike773@HPLUSSPORT.com,7/29/24,External SSD,9,$197 ,1844.84,SHIPPED,U.S.A,debit,n/a
+ORD-19539,DAVID  Brown,emily.311@kinetecoinc.com,7/29/23,External SSD,0,$193 ,722.49,PENDING,Canada,Debit Card,
+ORD-64254,MIKE smith,lisa.594@hplussport.com,9/9/23,Mouse Pad,5,483.4,1466.88,SHIPPED,CA,Credit Card,
+ORD-12128,"Miller, John",sarah70@kinetecoinc.com,11/13/24,Monitor,1,268.45,553.11,shipped,N/A,debit,
+ORD-22624,LISA wilson,bob815@twotreesoliveoil.COM,20-08-2023,USB-C Cable,1,205.6,23.85,COMPLETED,England,Debit Card,n/a
+ORD-22499,Sarah  Brown,jane.701@red30tech.com,2/12/24,Smart Watch,4,340.1,284.2,completed,United Kingdom,debit,
+ORD-54642,LISA miller,N/A,4/6/24,External SSD,7,96.9,1239.14,Shipped,United States,debit,
+ORD-51507,BOB davis,jane136@red30tech.com,,USB-C Cable,-1,432.5,173.98,Cancelled,U.S.A,CREDIT CARD,NULL
+ORD-45247,jane  williams,bob496@twotreesoliveoil.COM,4/13/24,Wireless Headphones,-1,$422 ,864.08,Refunded,US,PayPal,N/A
+ORD-62198,"moore, anna",bob837@kinetecoinc.COM,,Laptop Stand,0,416.5,282.66,shipped,AUS,debit,NULL
+ORD-88372,DAVID Miller,emily719@kinetecoinc.COM,10/22/24,Mouse Pad,7,10.22,1118.2,cancelled,United Kingdom,CREDIT CARD,gift wrap
+ORD-73277,"JOHNSON, jane",emily467@twotreesoliveoil.com,8/4/24,Wireless Headphones,2,$425.34 ,1482.28,Cancelled,US,debit,N/A
+ORD-63090,Chris Miller,sarah_461@red30tech.com,3/6/23,External SSD,-1,$166 ,981.52,Refunded,England,credit card,gift wrap
+ORD-70012,bob moore,emily.121@hplussport.com,3/4/24,Webcam,7,$245.90 ,981.84,COMPLETED,Canada,Debit Card,
+ORD-35575,DAVID  davis,chris.728@twotreesoliveoil.com,10/9/23,Phone Case,8,277.11,1088.5,SHIPPED,USA,Apple Pay,
+ORD-65725,Sarah JONES,emily883@kinetecoinc.COM,9/16/24,Phone Case,4,403.69,1079.84,SHIPPED,UK,paypal,
+ORD-99037,CHRIS smith,mike719@hplussport.com,14-08-2024,Webcam,8,318.65,1500.86,SHIPPED,Canada,Credit Card,
+ORD-70089,jane  WILSON,chris_845@hplussport.com,5/14/23,Mouse Pad,1,54.3,,COMPLETED,USA,debit,
+ORD-27290,BOB johnson,emily681@hplussport.com,4/8/23,USB-C Cable,3,262.12,1635.13,Pending,Canada,debit,
+ORD-23425,bob  williams,mike_657@red30tech.com,10/5/24,Smart Watch,8,47.91,771.14,Pending,US,credit card,
+ORD-88644,"JONES, John",david194@kinetecoinc.com,5/26/24,Wireless Headphones,-1,70.33,1094.98,COMPLETED,United States,,
+ORD-39045,CHRIS wilson,david_786@twotreesoliveoil.com,3/22/23,Phone Case,-1,198.41,877.78,Shipped,United States,credit card,N/A
+ORD-17212,MIKE JOHNSON,john.168@hplussport.com,10/3/23,Wireless Headphones,6,139.63,994.81,Cancelled,Canada,CREDIT CARD,gift wrap
+ORD-23487,jane Brown,john.251@twotreesoliveoil.com,2/6/23,Webcam,-1,$128 ,160.38,SHIPPED,AUS,CREDIT CARD,
+ORD-16019,ANNA jones,david468@HPLUSSPORT.COM,1/13/24,Laptop Stand,9,79.53,696.12,Completed,USA,debit,rush order
+ORD-79443,JOHN williams,sarah919@red30tech.COM,2/8/24,Wireless Headphones,7,$122 ,788.94,SHIPPED,UK,PayPal,
+ORD-86638,ANNA davis,david367@kinetecoinc.com,11/8/23,Mouse Pad,3,357,1355.98,shipped,US,debit,N/A
+ORD-82105,MIKE JOHNSON,sarah134@kinetecoinc.com,,Monitor,3,$453 ,1884.85,Completed,Australia,debit,N/A
+ORD-27290,MIKE jones,mike36@kinetecoinc.com,1/28/24,External SSD,4,$495 ,1563.96,SHIPPED,CA,paypal,
+ORD-16265,bob  Smith,lisa239@hplussport.COM,2/27/23,Webcam,6,$92 ,61.27,SHIPPED,Australia,PayPal,N/A
+ORD-33010,"moore, Sarah",N/A,12/6/23,Phone Case,6,$460 ,299.69,COMPLETED,CA,credit card,gift wrap
+ORD-96787,"garcia, bob",chris811@kinetecoinc.COM,23-01-2024,Mechanical Keyboard,3,365.77,1988.59,cancelled,N/A,PayPal,n/a
+ORD-75035,SARAH garcia,jane.842@twotreesoliveoil.com,25-12-2023,Wireless Headphones,1,$221.92 ,988.7,Pending,England,Apple Pay,n/a
+ORD-39567,John JONES,jane76@red30tech.COM,6/4/23,Smart Watch,8,218.51,318.42,completed,U.S.A,paypal,rush order
+ORD-22571,anna williams,chris.90@twotreesoliveoil.com,10/26/23,USB-C Cable,5,$238 ,1090.53,COMPLETED,England,Apple Pay,
+ORD-70956,"Smith, lisa",jane88@twotreesoliveoil.COM,7/2/24,Laptop Stand,0,44.08,1801.41,cancelled,Australia,Apple Pay,
+ORD-31910,MIKE  Smith,chris207@red30tech.com,19-07-2024,External SSD,8,394.34,229.48,COMPLETED,Australia,credit card,
+ORD-23237,EMILY miller,anna.586@red30tech.com,11/28/24,Mouse Pad,4,$374 ,,shipped,Canada,credit card,
+ORD-68079,Chris moore,sarah936@TWOtreesoliveoil.com,6/2/24,External SSD,10,$91.00 ,502.73,PENDING,United Kingdom,paypal,gift wrap
+ORD-76207,JOHN brown,anna182@TWOtreesoliveoil.com,1/31/24,Smart Watch,4,$325 ,1029,Refunded,N/A,CREDIT CARD,n/a
+ORD-39329,bob  JONES,emily471@twotreesoliveoil.COM,7/6/24,Smart Watch,0,152.75,556.58,SHIPPED,UK,paypal,
+ORD-41496,LISA miller,john672@twotreesoliveoil.com,8/20/24,Mouse Pad,4,453.73,344.12,Refunded,US,Apple Pay,
+ORD-83273,"JOHNSON, EMILY",bob431@hplussport.com,10/11/24,Smart Watch,2,445.3,829.15,COMPLETED,U.S.A,Apple Pay,
+ORD-33639,MIKE garcia,N/A,6/22/23,Monitor,2,309.2,957.41,Completed,N/A,Debit Card,
+ORD-79603,SARAH brown,jane_393@red30tech.com,6/16/24,Webcam,-1,$498.09 ,1814.25,Pending,N/A,CREDIT CARD,
+ORD-87292,JOHN miller,lisa50@red30tech.com,5/7/23,Phone Case,4,154.05,1213.24,COMPLETED,United States,credit card,rush order
+ORD-23928,"WILSON, bob",chris_303@twotreesoliveoil.com,1/14/23,Smart Watch,8,474.98,207.07,shipped,Canada,paypal,rush order
+ORD-23082,BOB garcia,jane_98@kinetecoinc.com,28-09-2024,USB-C Cable,-1,95.5,774.5,PENDING,AUS,CREDIT CARD,
+ORD-17686,jane  Miller,anna186@kinetecoinc.com,2/26/24,Mechanical Keyboard,6,353.76,451.85,Refunded,CA,credit card,NULL
+ORD-42581,Chris williams,N/A,6/1/24,Phone Case,2,$164 ,449.3,Refunded,U.S.A,Apple Pay,n/a
+ORD-75333,anna Smith,john_571@hplussport.com,2/25/23,Mouse Pad,9,359.8,1519.84,Shipped,N/A,paypal,
+,,,,,,,,,,,
+ORD-23935,MIKE Miller,sarah_193@kinetecoinc.com,2/29/24,Smart Watch,2,231.41,1000.16,Cancelled,CA,Apple Pay,
+ORD-33226,MIKE  JOHNSON,lisa904@kinetecoinc.com,10/29/23,Phone Case,0,$422 ,1871.35,Refunded,U.S.A,paypal,gift wrap
+ORD-27389,MIKE wilson,emily576@red30tech.COM,1/26/24,Wireless Headphones,0,$376 ,297.12,Completed,UK,Credit Card,gift wrap
+ORD-23432,DAVID  Brown,bob710@hplussport.COM,9/15/23,Monitor,-1,378.78,1451.2,Shipped,US,credit card,
+ORD-77350,BOB wilson,lisa867@hplussport.com,11/27/23,Smart Watch,5,396,639.13,Shipped,CA,CREDIT CARD,NULL
+ORD-62876,SARAH garcia,sarah.974@red30tech.com,9/20/24,Wireless Headphones,6,458.4,1449.33,Completed,United Kingdom,Apple Pay,N/A
+ORD-27290,"JOHNSON, jane",david547@red30tech.com,3/21/24,Phone Case,1,359.85,1589.46,Cancelled,U.S.A,debit,NULL
+ORD-63011,,david_7@red30tech.com,11/5/23,Monitor,7,$411.95 ,277.08,Pending,CA,CREDIT CARD,rush order
+ORD-94926,"WILSON, DAVID",john.587@red30tech.com,10/23/24,Phone Case,0,101.19,1703.52,Cancelled,CA,credit card,rush order
+ORD-86099,MIKE Brown,jane922@HPLUSSPORT.COM,8/21/24,Mouse Pad,6,$88.48 ,1283.47,shipped,US,Debit Card,N/A
+ORD-57020,jane williams,mike913@red30tech.COM,8/18/24,Smart Watch,4,278.04,1551.52,SHIPPED,Australia,paypal,
+ORD-76900,"Brown, John",mike457@kinetecoinc.com,5/14/24,Mouse Pad,4,$336 ,1836.21,Completed,N/A,credit card,
+ORD-45847,"moore, DAVID",chris_375@twotreesoliveoil.com,12/20/23,Smart Watch,1,222.75,426.98,COMPLETED,Australia,credit card,
+ORD-53283,"davis, anna",chris23@kinetecoinc.COM,8/9/24,Mechanical Keyboard,3,301.68,1457.31,shipped,U.S.A,Apple Pay,N/A
+ORD-63840,MIKE moore,emily.945@red30tech.com,7/27/23,External SSD,7,304.73,1756.12,Cancelled,United States,CREDIT CARD,n/a
+ORD-10157,Chris  WILSON,john715@hplussport.COM,8/12/24,Mechanical Keyboard,8,455.49,820.25,Shipped,N/A,Credit Card,n/a
+,EMILY miller,chris668@hplussport.com,2/28/24,Monitor,-1,$282 ,1549.52,Pending,AUS,PayPal,N/A
+ORD-31206,EMILY WILSON,john824@RED30TECH.com,1/15/24,Webcam,0,$357.24 ,880.75,Shipped,CA,Credit Card,n/a
+ORD-40365,EMILY Brown,jane283@kinetecoinc.COM,,USB-C Cable,0,364.44,1926.76,shipped,U.S.A,debit,n/a
+ORD-39045,JANE wilson,jane.823@hplussport.com,4/14/24,Wireless Headphones,8,$132.62 ,463.71,SHIPPED,United Kingdom,Credit Card,rush order
+ORD-22190,"JOHNSON, EMILY",emily.224@kinetecoinc.com,9/29/23,Laptop Stand,-1,82.22,1328.53,cancelled,N/A,Credit Card,N/A
+ORD-51342,lisa  JONES,david287@red30tech.com,2/3/23,Phone Case,8,350.63,,Shipped,United States,paypal,
+ORD-41082,"garcia, EMILY",sarah.430@hplussport.com,8/12/24,Mechanical Keyboard,4,$428.87 ,24.44,Pending,AUS,Debit Card,N/A
+ORD-83680,jane williams,bob_488@hplussport.com,21-09-2023,UNKNOWN,-1,$434.35 ,1301.48,Cancelled,UK,Apple Pay,N/A
+ORD-59947,MIKE williams,lisa.586@red30tech.com,30-10-2024,Smart Watch,0,$444 ,1044.27,PENDING,US,CREDIT CARD,
+ORD-20494,jane  JOHNSON,john790@twotreesoliveoil.com,4/2/24,Mechanical Keyboard,8,69.98,,SHIPPED,United Kingdom,Apple Pay,
+ORD-81898,DAVID  williams,lisa446@kinetecoinc.com,27-02-2024,Wireless Headphones,1,175.22,986.4,PENDING,England,PayPal,
+ORD-34716,"Brown, Chris",chris.849@kinetecoinc.com,19-09-2024,External SSD,5,$98.06 ,1275.6,cancelled,Australia,Debit Card,
+ORD-80119,"JONES, bob",john_239@red30tech.com,25-05-2024,Wireless Headphones,6,422.56,787.88,Cancelled,U.S.A,paypal,NULL
+ORD-25985,"davis, Chris",john_204@kinetecoinc.com,6/12/23,External SSD,9,$130.39 ,108.91,Refunded,United States,debit,gift wrap
+ORD-10772,Sarah Smith,anna705@kinetecoinc.com,25-09-2024,Wireless Headphones,-1,324.06,469.19,Cancelled,United Kingdom,Apple Pay,
+ORD-23935,John  davis,david714@hplussport.com,9/5/24,External SSD,3,$151 ,1552.96,Cancelled,US,Debit Card,n/a
+ORD-18302,Chris  Brown,mike628@hplussport.com,3/10/23,Phone Case,3,105.03,,Refunded,AUS,paypal,
+ORD-89423,,anna_951@red30tech.com,3/1/23,Wireless Headphones,0,43.58,1451.72,Cancelled,U.S.A,PayPal,n/a
+ORD-33448,JANE moore,chris.905@kinetecoinc.com,9/6/24,Mouse Pad,-1,423.2,650.28,Shipped,U.S.A,paypal,gift wrap
+ORD-68654,,N/A,1/17/23,Mechanical Keyboard,0,$492 ,,shipped,CA,CREDIT CARD,
+ORD-90658,"Brown, lisa",bob.95@kinetecoinc.com,8/13/24,Mechanical Keyboard,1,$44 ,1635.2,Pending,United States,PayPal,n/a
+ORD-93084,bob WILSON,lisa154@red30tech.com,8/12/24,Webcam,5,78.3,103.38,Pending,England,CREDIT CARD,
+ORD-35966,"WILSON, Sarah",bob796@red30tech.com,15-07-2023,Wireless Headphones,5,493.9,883.72,Shipped,United Kingdom,credit card,
+ORD-41856,BOB smith,jane313@kinetecoinc.COM,7/13/24,External SSD,8,349.1,1328.74,Completed,USA,paypal,
+ORD-11092,EMILY JOHNSON,chris.237@red30tech.com,4/13/24,Wireless Headphones,1,461.5,318.23,SHIPPED,United Kingdom,PayPal,
+ORD-18127,JOHN wilson,emily919@twotreesoliveoil.com,6/6/23,Smart Watch,6,$273.41 ,1369.68,Shipped,UK,CREDIT CARD,NULL
+ORD-29025,MIKE garcia,jane189@hplussport.com,14-10-2024,Laptop Stand,2,96.45,1213.18,cancelled,U.S.A,Credit Card,gift wrap
+ORD-72469,"garcia, anna",anna486@kinetecoinc.com,16-01-2023,Laptop Stand,4,37.7,982.44,SHIPPED,U.S.A,Credit Card,n/a
+ORD-59856,lisa moore,anna468@twotreesoliveoil.COM,2/20/23,Webcam,0,233.37,1381.46,COMPLETED,AUS,credit card,
+ORD-81618,"Smith, anna",sarah904@twotreesoliveoil.com,5/4/24,Webcam,9,$192.45 ,1133.16,Refunded,US,CREDIT CARD,
+ORD-50569,bob williams,sarah4@twotreesoliveoil.COM,9/14/24,Smart Watch,8,208.02,,Cancelled,AUS,PayPal,
+ORD-17217,JOHN moore,jane51@hplussport.COM,9/1/24,Phone Case,-1,$466 ,1795.57,completed,CA,Apple Pay,
+ORD-45968,Sarah Brown,david90@hplussport.COM,30-09-2024,Smart Watch,10,262.2,1767.91,Shipped,U.S.A,,
+ORD-25456,lisa  Miller,emily574@kinetecoinc.com,6/2/24,Wireless Headphones,-1,173.97,1664.93,Shipped,United Kingdom,Apple Pay,N/A
+ORD-94626,ANNA wilson,chris951@kinetecoinc.COM,12/29/23,Mechanical Keyboard,-1,$491.89 ,782.18,cancelled,UK,Debit Card,
+ORD-21376,"JONES, anna",mike115@twotreesoliveoil.COM,,External SSD,3,173.36,658.04,completed,CA,CREDIT CARD,
+ORD-70210,JANE smith,lisa893@RED30TECH.COM,11/16/23,Mechanical Keyboard,-1,104.27,885.03,completed,US,Credit Card,n/a
+ORD-23418,"JONES, EMILY",bob588@hplussport.COM,5/14/23,Wireless Headphones,2,$31.63 ,1783.1,Refunded,Canada,paypal,gift wrap
+ORD-97932,"moore, anna",anna.100@hplussport.com,23-09-2024,Webcam,-1,395.4,135.4,completed,Canada,paypal,gift wrap
+ORD-26697,jane garcia,david473@kinetecoinc.com,12/15/23,Smart Watch,7,$285.77 ,1340.86,cancelled,United States,Apple Pay,gift wrap
+ORD-68355,jane moore,lisa.790@hplussport.com,8/17/24,Phone Case,0,$198.04 ,1755.46,shipped,AUS,debit,gift wrap
+,CHRIS williams,david992@RED30TECH.com,8/27/24,Webcam,7,$220.42 ,380.51,Pending,United Kingdom,CREDIT CARD,rush order
+ORD-97826,,mike739@RED30TECH.com,9/10/24,Monitor,9,$278 ,852.42,Completed,U.S.A,paypal,NULL
+ORD-85543,LISA davis,anna985@red30tech.COM,4/1/23,USB-C Cable,0,308.45,940.39,Cancelled,Australia,debit,gift wrap
+ORD-48616,LISA jones,anna593@red30tech.com,6/1/24,Mechanical Keyboard,5,$310 ,,completed,Australia,Apple Pay,gift wrap
+ORD-44242,MIKE WILSON,jane.991@kinetecoinc.com,10/14/24,Mouse Pad,0,$378.96 ,955.08,PENDING,CA,debit,N/A
+ORD-79526,,anna392@twotreesoliveoil.COM,7/10/23,USB-C Cable,5,$233.25 ,1179.5,Shipped,AUS,CREDIT CARD,gift wrap
+,Chris JOHNSON,emily225@red30tech.COM,8/31/24,USB-C Cable,2,428.94,373.61,completed,UK,credit card,N/A
+ORD-46226,"JONES, EMILY",bob_796@twotreesoliveoil.com,9/29/23,Monitor,4,$93.33 ,865.35,cancelled,Canada,credit card,
+ORD-84887,"davis, John",john956@kinetecoinc.com,6/11/24,Webcam,2,6.6,1072.93,SHIPPED,UK,credit card,gift wrap
+ORD-54572,"Brown, bob",chris677@red30tech.com,10/9/24,Phone Case,1,$17.56 ,130.67,Cancelled,Canada,Apple Pay,
+ORD-87292,"JOHNSON, Chris",david470@red30tech.com,4/27/24,Phone Case,1,318.17,345.53,cancelled,United States,PayPal,
+ORD-65864,Chris garcia,lisa_559@kinetecoinc.com,10/8/23,Phone Case,6,222.14,1583.15,Refunded,US,,N/A
+ORD-10946,lisa  JONES,anna709@hplussport.com,6/28/23,Smart Watch,3,$308 ,14.12,Shipped,CA,Debit Card,
+ORD-70845,"Smith, bob",mike702@twotreesoliveoil.com,10/19/23,Mouse Pad,10,26.44,1572.06,PENDING,United States,Apple Pay,n/a
+ORD-64927,EMILY Brown,jane243@kinetecoinc.com,2/25/23,Smart Watch,8,$196.73 ,1951.23,Shipped,USA,Credit Card,rush order
+ORD-71018,EMILY brown,lisa.928@kinetecoinc.com,18-04-2024,UNKNOWN,7,$127.68 ,1185.58,COMPLETED,USA,Credit Card,
+ORD-76088,anna  JOHNSON,jane_572@kinetecoinc.com,4/3/23,Mechanical Keyboard,3,429.67,930.2,COMPLETED,England,Debit Card,N/A
+ORD-10178,EMILY WILSON,bob715@kinetecoinc.com,1/10/24,Mouse Pad,6,325.85,413.4,SHIPPED,United States,PayPal,
+ORD-45043,JOHN johnson,anna514@red30tech.com,4/13/24,Phone Case,5,$59.14 ,1750.61,Cancelled,USA,CREDIT CARD,N/A
+ORD-68177,,john893@hplussport.com,6/26/24,Mechanical Keyboard,10,$450 ,746.95,shipped,USA,paypal,N/A
+ORD-91085,"williams, bob",mike166@hplussport.com,7/8/23,Wireless Headphones,-1,$78.23 ,247.37,Completed,Canada,Apple Pay,gift wrap
+ORD-81584,BOB davis,lisa683@kinetecoinc.com,7/18/24,Webcam,10,225.76,394.32,Cancelled,UK,credit card,
+ORD-98744,"Miller, DAVID",lisa_620@twotreesoliveoil.com,13-01-2023,Mechanical Keyboard,8,111.8,580.82,Pending,England,credit card,
+ORD-72208,EMILY  JOHNSON,chris.655@twotreesoliveoil.com,26-01-2024,Wireless Headphones,0,$249.58 ,,Completed,UK,Apple Pay,
+ORD-47707,Sarah Smith,anna994@twotreesoliveoil.com,3/5/23,Smart Watch,0,$86 ,1388.1,SHIPPED,UK,Debit Card,
+ORD-79417,Sarah williams,mike557@hplussport.com,12/27/23,UNKNOWN,0,$190 ,330.24,Shipped,U.S.A,credit card,NULL
