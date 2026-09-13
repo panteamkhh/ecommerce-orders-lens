@@ -3,9 +3,14 @@
 The plotting layer is deliberately dumb: it receives already-computed
 DataFrames from :mod:`src.analysis` and only worries about presentation.
 
-Every chart shares one visual language: the same fonts, title weight, grid,
-tick sizes, colour meaning and value-label style. That consistency is enforced
-through the small helpers below rather than repeated in each function.
+Every chart shares one visual language - the **Indigo Aurora** theme:
+
+* magnitude is encoded with an indigo gradient (light -> deep),
+* revenue-positive signals use emerald, losses use rose,
+* the same fonts, title weight, grid, tick sizes and value-label style.
+
+That consistency is enforced through the helpers below rather than repeated in
+each function, so the whole gallery reads as one set.
 """
 
 from __future__ import annotations
@@ -15,20 +20,31 @@ import matplotlib
 matplotlib.use("Agg")
 
 import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
 import seaborn as sns
+from matplotlib.colors import LinearSegmentedColormap, to_hex
 
 from . import config
 
 # --------------------------------------------------------------------------- #
-# Shared theme
+# Shared theme - "Indigo Aurora"
 # --------------------------------------------------------------------------- #
-PRIMARY = "#2563eb"  # single-series bars / lines
-GOOD = "#10b981"  # realised revenue
-BAD = "#ef4444"  # losses / cancellations
-MUTED = "#94a3b8"  # reference lines
-INK = "#334155"  # value labels
-CATEGORICAL = [PRIMARY, GOOD, "#f59e0b", "#8b5cf6", "#0ea5e9", BAD, MUTED]
+INK = "#0f172a"  # headings
+TEXT = "#334155"  # value labels
+MUTED = "#94a3b8"  # reference lines / secondary text
+GRID = "#e9edf5"
+PRIMARY = "#4f46e5"  # indigo-600, the signature colour
+ACCENT = "#06b6d4"  # cyan-500
+GOOD = "#10b981"  # emerald-500, realised revenue
+BAD = "#f43f5e"  # rose-500, losses / cancellations
+AMBER = "#f59e0b"
+VIOLET = "#8b5cf6"
+CATEGORICAL = [PRIMARY, ACCENT, AMBER, VIOLET, "#0ea5e9", BAD, MUTED]
+
+INDIGO_CMAP = LinearSegmentedColormap.from_list("aurora", ["#c7d2fe", "#6366f1", "#312e81"])
+ROSE_CMAP = LinearSegmentedColormap.from_list("rose", ["#fecdd3", "#fb7185", "#9f1239"])
+HERO_CMAP = LinearSegmentedColormap.from_list("hero", ["#1e1b4b", "#4338ca", "#0e7490"])
 
 plt.rcParams.update(
     {
@@ -39,6 +55,7 @@ plt.rcParams.update(
         "font.size": 10,
         "axes.titlesize": 12,
         "axes.titleweight": "bold",
+        "axes.titlecolor": INK,
         "axes.titlepad": 12,
         "axes.labelsize": 10,
         "axes.labelcolor": "#1f2937",
@@ -47,7 +64,7 @@ plt.rcParams.update(
         "axes.spines.right": False,
         "axes.grid": True,
         "axes.axisbelow": True,
-        "grid.color": "#e2e8f0",
+        "grid.color": GRID,
         "grid.linewidth": 0.8,
         "xtick.labelsize": 9,
         "ytick.labelsize": 9,
@@ -62,12 +79,26 @@ plt.rcParams.update(
 )
 
 
+# --------------------------------------------------------------------------- #
+# Helpers
+# --------------------------------------------------------------------------- #
 def _money(value: float) -> str:
     return f"${value:,.0f}"
 
 
 def _int(value: float) -> str:
     return f"{value:,.0f}"
+
+
+def _bar_colors(values, cmap=INDIGO_CMAP):
+    """Map a magnitude series onto the theme gradient (light -> deep)."""
+    arr = np.asarray(list(values), dtype=float)
+    if arr.size == 0:
+        return []
+    low, high = float(arr.min()), float(arr.max())
+    if high <= low:
+        return ["#6366f1"] * arr.size
+    return [to_hex(cmap((v - low) / (high - low))) for v in arr]
 
 
 def _save(fig, filename: str):
@@ -89,13 +120,42 @@ def _money_axis(ax, which: str = "y") -> None:
 def _vlabels(ax, values, fmt=_money) -> None:
     """Value labels on top of vertical bars."""
     for x, value in enumerate(values):
-        ax.text(x, value, fmt(value), ha="center", va="bottom", fontsize=8, color=INK)
+        ax.text(x, value, fmt(value), ha="center", va="bottom", fontsize=8, color=TEXT)
 
 
 def _hlabels(ax, values, fmt=_money, suffix: str = "") -> None:
     """Value labels at the end of horizontal bars."""
     for y, value in enumerate(values):
-        ax.text(value, y, f"  {fmt(value)}{suffix}", va="center", fontsize=8, color=INK)
+        ax.text(value, y, f"  {fmt(value)}{suffix}", va="center", fontsize=8, color=TEXT)
+
+
+# --------------------------------------------------------------------------- #
+# Banner
+# --------------------------------------------------------------------------- #
+def chart_hero(info: dict):
+    """A wide themed banner for the top of the README."""
+    fig = plt.figure(figsize=(12, 3.4))
+    ax = fig.add_axes((0, 0, 1, 1))
+    ax.axis("off")
+
+    gradient = np.linspace(0, 1, 512).reshape(1, -1)
+    ax.imshow(gradient, aspect="auto", cmap=HERO_CMAP, extent=(0, 1, 0, 1))
+
+    # Palette swatches, top right.
+    swatches = [PRIMARY, ACCENT, GOOD, BAD, AMBER]
+    for i, colour in enumerate(swatches):
+        ax.scatter(0.70 + i * 0.045, 0.86, s=90, color=colour, edgecolors="none", zorder=3)
+
+    ax.text(0.04, 0.70, info["title"], color="white", fontsize=26, fontweight="bold", va="center")
+    ax.text(0.04, 0.50, info["subtitle"], color="#c7d2fe", fontsize=12, va="center")
+
+    metrics = info.get("metrics", [])[:4]
+    for i, (value, label) in enumerate(metrics):
+        x = 0.055 + i * 0.24
+        ax.text(x, 0.24, value, color="white", fontsize=16, fontweight="bold", va="center")
+        ax.text(x, 0.09, label, color="#a5b4fc", fontsize=9, va="center")
+
+    return _save(fig, "00_hero.png")
 
 
 # --------------------------------------------------------------------------- #
@@ -107,9 +167,8 @@ def chart_top_bottom_products(product_df: pd.DataFrame, top_n: int = 5):
     bottom = product_df.tail(top_n)
     view = pd.concat([top, bottom]).drop_duplicates(subset="product").sort_values("revenue")
 
-    colors = [GOOD if r >= product_df["revenue"].median() else BAD for r in view["revenue"]]
     fig, ax = plt.subplots(figsize=(8.5, 6))
-    ax.barh(view["product"], view["revenue"], color=colors)
+    ax.barh(view["product"], view["revenue"], color=_bar_colors(view["revenue"]))
     _title(ax, "Revenue by product (top and bottom performers)")
     ax.set_xlabel("Recognised revenue")
     _money_axis(ax, "x")
@@ -120,14 +179,17 @@ def chart_top_bottom_products(product_df: pd.DataFrame, top_n: int = 5):
 def chart_revenue_trend(trend_df: pd.DataFrame):
     """Monthly recognised revenue over the whole history."""
     fig, ax = plt.subplots(figsize=(9, 4.5))
-    ax.plot(trend_df["order_year_month"], trend_df["revenue"], marker="o", color=PRIMARY)
-    ax.fill_between(trend_df["order_year_month"], trend_df["revenue"], color=PRIMARY, alpha=0.12)
+    x = np.arange(len(trend_df))
+    revenue = trend_df["revenue"].to_numpy(dtype=float)
+    ax.plot(x, revenue, marker="o", color=PRIMARY, linewidth=2)
+    ax.fill_between(x, revenue, color=PRIMARY, alpha=0.12)
+    ax.scatter(x, revenue, color=ACCENT, s=28, zorder=3)
     _title(ax, "Monthly revenue trend")
     ax.set_xlabel("Month")
     ax.set_ylabel("Revenue")
     _money_axis(ax, "y")
     step = max(len(trend_df) // 10, 1)
-    ax.set_xticks(range(0, len(trend_df), step))
+    ax.set_xticks(x[::step])
     ax.set_xticklabels(trend_df["order_year_month"][::step], rotation=45, ha="right")
     return _save(fig, "02_revenue_trend.png")
 
@@ -135,7 +197,7 @@ def chart_revenue_trend(trend_df: pd.DataFrame):
 def chart_revenue_by_country(country_df: pd.DataFrame):
     """Revenue share per country."""
     fig, ax = plt.subplots(figsize=(8, 4.6))
-    ax.bar(country_df["country"], country_df["revenue"], color=PRIMARY)
+    ax.bar(country_df["country"], country_df["revenue"], color=_bar_colors(country_df["revenue"]))
     _title(ax, "Revenue by country")
     ax.set_ylabel("Revenue")
     _money_axis(ax, "y")
@@ -175,7 +237,7 @@ def chart_top_customers(customer_df: pd.DataFrame):
     """Top customers by recognised revenue."""
     view = customer_df.sort_values("revenue")
     fig, ax = plt.subplots(figsize=(8.5, 5))
-    ax.barh(view["customer_name"], view["revenue"], color=PRIMARY)
+    ax.barh(view["customer_name"], view["revenue"], color=_bar_colors(view["revenue"]))
     _title(ax, "Top customers by revenue")
     ax.set_xlabel("Revenue")
     _money_axis(ax, "x")
@@ -186,7 +248,11 @@ def chart_top_customers(customer_df: pd.DataFrame):
 def chart_seasonality(season_df: pd.DataFrame):
     """Average revenue per calendar month."""
     fig, ax = plt.subplots(figsize=(8, 4.6))
-    ax.bar(season_df["order_month_name"], season_df["avg_revenue"], color=PRIMARY)
+    ax.bar(
+        season_df["order_month_name"],
+        season_df["avg_revenue"],
+        color=_bar_colors(season_df["avg_revenue"]),
+    )
     _title(ax, "Average revenue by calendar month")
     ax.set_ylabel("Avg. revenue")
     _money_axis(ax, "y")
@@ -196,7 +262,9 @@ def chart_seasonality(season_df: pd.DataFrame):
 def chart_cancellation_impact(impact_df: pd.DataFrame):
     """Money sitting in Cancelled / Refunded / Pending."""
     fig, ax = plt.subplots(figsize=(7, 4.6))
-    ax.bar(impact_df["status"], impact_df["value"], color=BAD)
+    ax.bar(
+        impact_df["status"], impact_df["value"], color=_bar_colors(impact_df["value"], ROSE_CMAP)
+    )
     _title(ax, "Value locked in non-revenue statuses")
     ax.set_ylabel("Order value")
     _money_axis(ax, "y")
@@ -224,7 +292,7 @@ def chart_quality_before_after(metrics: dict):
             ha="center",
             va="bottom",
             fontsize=8,
-            color=INK,
+            color=TEXT,
         )
     return _save(fig, "09_data_quality.png")
 
@@ -239,7 +307,7 @@ def chart_ml_confusion_matrix(matrix, model_name: str, labels=("Not revenue", "R
         matrix,
         annot=True,
         fmt="d",
-        cmap="Blues",
+        cmap=INDIGO_CMAP,
         cbar=False,
         xticklabels=labels,
         yticklabels=labels,
@@ -257,7 +325,7 @@ def chart_ml_feature_importance(importance_df: pd.DataFrame, top_n: int = 12):
     """Which signals drive the order-outcome prediction."""
     view = importance_df.head(top_n).sort_values("weight")
     fig, ax = plt.subplots(figsize=(8.5, 5))
-    ax.barh(view["feature"], view["importance_%"], color=PRIMARY)
+    ax.barh(view["feature"], view["importance_%"], color=_bar_colors(view["importance_%"]))
     _title(ax, "What predicts whether an order converts")
     ax.set_xlabel("Relative importance (%)")
     _hlabels(ax, view["importance_%"], fmt=lambda v: f"{v:.1f}%")
@@ -271,7 +339,7 @@ def chart_ml_roc(roc: dict, model_name: str):
         roc["fpr"],
         roc["tpr"],
         color=PRIMARY,
-        linewidth=2,
+        linewidth=2.4,
         label=f"{model_name} (AUC={roc['auc']:.2f})",
     )
     ax.plot([0, 1], [0, 1], linestyle="--", color=MUTED, label="Random")
@@ -288,7 +356,7 @@ def chart_customer_segments(segment_summary: pd.DataFrame):
     """Revenue and customer count per RFM segment."""
     view = segment_summary.sort_values("total_revenue")
     fig, ax = plt.subplots(figsize=(8.5, 4.8))
-    ax.barh(view["segment"], view["total_revenue"], color=PRIMARY)
+    ax.barh(view["segment"], view["total_revenue"], color=_bar_colors(view["total_revenue"]))
     _title(ax, "Revenue by customer segment")
     ax.set_xlabel("Recognised revenue")
     _money_axis(ax, "x")
@@ -299,6 +367,6 @@ def chart_customer_segments(segment_summary: pd.DataFrame):
             f"  {_money(value)}  ({_int(count)} customers)",
             va="center",
             fontsize=8,
-            color=INK,
+            color=TEXT,
         )
     return _save(fig, "13_customer_segments.png")

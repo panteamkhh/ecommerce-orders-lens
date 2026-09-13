@@ -159,6 +159,25 @@ def main() -> None:
     )
 
     _section("5. CHARTS & DASHBOARD")
+    champion = seg_result["summary"].iloc[0]
+    hero = visualization.chart_hero(
+        {
+            "title": "E-commerce Orders Lens",
+            "subtitle": "Cleaning  ·  EDA  ·  Machine Learning  ·  Dashboard",
+            "metrics": [
+                (
+                    f"{metrics['rows_after']} clean orders",
+                    f"from {metrics['rows_before']} raw rows",
+                ),
+                (f"${kpis['total_revenue']:,.0f}", "recognised revenue"),
+                (
+                    f"{champion['revenue_share_%']:.0f}% revenue",
+                    f"from {champion['customers']} Champions",
+                ),
+                ("13 charts", "one HTML dashboard"),
+            ],
+        }
+    )
     chart_paths = [
         visualization.chart_top_bottom_products(by_product),
         visualization.chart_revenue_trend(trend),
@@ -178,6 +197,7 @@ def main() -> None:
     ]
     for path in chart_paths:
         print(f"  chart -> {path.name}")
+    print(f"  banner -> {hero.name}")
 
     tables = {
         "products": by_product,
