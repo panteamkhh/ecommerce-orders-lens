@@ -20,7 +20,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   - KMeans RFM customer segmentation with the cluster count chosen by
     silhouette score.
 - Nine business charts plus four ML charts exported to `screenshots/`, all
-  sharing one visual theme.
+  sharing the **Indigo Aurora** theme (magnitude gradient, emerald for realised
+  revenue, rose for losses).
+- A themed hero banner (`screenshots/00_hero.png`) for the README.
 - Self-contained HTML dashboard with embedded charts, KPI cards and tables.
 - `pytest` test suite covering cleaning invariants, feature engineering, every
   analysis function and both ML algorithms.
