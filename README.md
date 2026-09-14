@@ -287,6 +287,11 @@ pre-commit install          # optional git hooks
 CI runs lint, format checks, the test suite and a full pipeline run on Python
 3.10–3.12. See [`CONTRIBUTING.md`](CONTRIBUTING.md) for details.
 
+Convenience targets are available through the `Makefile` (`make run`, `make test`,
+`make lint`, `make format`). Every model and chart uses `config.RANDOM_STATE`, so
+runs are reproducible: `python -m src.run_analysis` produces identical numbers
+and charts on every execution.
+
 ## Key assumptions
 
 - **Recognised revenue** counts only `Completed` and `Shipped` orders;
